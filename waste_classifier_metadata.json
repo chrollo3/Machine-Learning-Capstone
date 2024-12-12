@@ -1,0 +1,28 @@
+{
+    "model_name": "waste_classifier",
+    "version": "1.0",
+    "input_shape": [
+        224,
+        224,
+        3
+    ],
+    "output_classes": [
+        "Organik",
+        "Anorganik"
+    ],
+    "preprocessing": {
+        "rescale": "1/255.0",
+        "resize": [
+            224,
+            224
+        ]
+    },
+    "output_details": {
+        "type": "sigmoid",
+        "range": [
+            0,
+            1
+        ]
+    },
+    "quantization": "default"
+}
